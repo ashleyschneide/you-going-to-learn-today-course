@@ -1,0 +1,16 @@
+title: You going to learn today
+description: All badges gone...
+template:
+  repo: you-going-to-learn-today-template
+  name: you-going-to-learn-today
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
